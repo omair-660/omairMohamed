@@ -1,0 +1,120 @@
+*{
+    font-family: "Cairo", sans-serif;
+    scroll-padding-top: 70px;
+}
+body{
+    height: 2222px;
+    background-color: #000;
+}
+:root{
+    --main-color:#F8494C;
+}
+.orange{
+    color: var(--main-color);
+}
+.home {
+    background-image: url("../image/land.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    z-index: 1;
+}
+.home::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+.nav-link{ 
+    color: #fff;
+}
+.nav-link:focus, .nav-link:hover {
+    color: var(--main-color);
+}
+.navbar-nav .nav-link.active{
+    color: var(--main-color);
+}
+header.bg{
+    background: #101010;
+    position: fixed;
+}
+.up{
+    width: 35px;
+    height: 35px;
+    border: 2px solid transparent;
+    background: var(--main-color);
+    transition: 0.5s;
+    right: 15px;
+    bottom: 15px;
+    transform: translateY(20px);
+opacity: 0;
+}
+.up:hover{
+    border: 2px solid var(--main-color);
+    background: transparent;
+}
+.up.open{
+transform: translateY(0);
+opacity: 1;
+}
+.navbar-brand{
+    color: white;
+    transition: 0.5s;
+}
+.navbar-brand.open{
+    color: var(--main-color);
+}
+.home .text span{
+    font-size: 50px;
+}
+.home .text .social a{
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    border: 2px solid var(--main-color);
+    margin: 12px;
+    border-radius: 50%;
+    transition: 0.5s;
+    color: #fff;
+}
+.home .text .social a:hover{
+    border-radius: 2px;
+    color: #d4d4d4;
+}
+.bottom {
+    border: 2px solid #fff;
+    width: 45px;
+    border-radius: 32px;
+    height: 80px;
+    bottom: 15px;
+    cursor: pointer;
+}
+.bottom i{
+    font-size: 35px;
+    animation:down 1s infinite cubic-bezier(0.78, -0.4, 0.78, 1.39);
+}
+@keyframes down {
+    0%{
+        margin-bottom: 100%;
+    }
+    100%{
+        margin-top: 50%;
+    }
+100%{
+    margin-top: 2000%;
+}
+}
+.progress-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: var(--bs-progress-bar-color);
+    text-align: center;
+    white-space: nowrap;
+    background-color: var(--main-color);
+    transition: var(--bs-progress-bar-transition);
+}
