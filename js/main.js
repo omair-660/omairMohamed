@@ -45,3 +45,62 @@ document.addEventListener("DOMContentLoaded", function () {
         progressObserver.observe(progress);
     });
 });
+
+let closeBtn = document.getElementById("close");
+let show = document.getElementById("show");
+let port1 = document.getElementById("port1");
+let port2 = document.getElementById("port2");
+let port3 = document.getElementById("port3");
+let port4 = document.getElementById("port4");
+let port5 = document.getElementById("port5");
+let port6 = document.getElementById("port6");
+let port7 = document.getElementById("port7");
+let port8 = document.getElementById("port8");
+
+closeBtn.addEventListener("click", function() {
+    show.classList.add("none");
+  });
+
+  port1.addEventListener("click", function() {
+    show.classList.remove("none");
+  });
+
+  port2.addEventListener("click", function() {
+    show.classList.remove("none");
+  });
+
+  port3.addEventListener("click", function() {
+    show.classList.remove("none");
+  });
+
+  port4.addEventListener("click", function() {
+    show.classList.remove("none");
+  });
+
+  port5.addEventListener("click", function() {
+    show.classList.remove("none");
+  });
+
+  port6.addEventListener("click", function() {
+    show.classList.remove("none");
+  });
+
+  port7.addEventListener("click", function() {
+    show.classList.remove("none");
+  });
+
+  port8.addEventListener("click", function() {
+    show.classList.remove("none");
+  });
+
+let moreBtn = document.getElementById("more");
+let moreSec = document.getElementById("moreSec");
+
+moreBtn.onclick = function(){
+    moreSec.classList.toggle ("het");
+    if (more.innerHTML === "See More") {
+        more.innerHTML = "See Less";
+    } else {
+        more.innerHTML = "See More";
+    }
+}
